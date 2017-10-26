@@ -15,11 +15,6 @@ public class QuestionFactory {
             case MULTI_ANSWER:
                 question = new MultiAnswerQuestion(type, base);
                 break;
-/*
-            case LUXURY:
-                question = new LuxuryCar();
-                break;
-              */
 
             default:
                 // throw some exception
