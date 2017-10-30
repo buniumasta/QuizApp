@@ -23,9 +23,9 @@ Application written by Bartosz Ostrowski (buniumasta@gmail.com)
  
 
 # Far Future: 
- - avoid binding to static number of andswers, create List rather than static number variables.
- - Adapt logic.
- - move to knowlege base to SQL lite
+ - avoid binding to static number of answers, create List rather than static number variables. Consider use Recykler and Adapters
+ - Adapt logic to new presentaiton.
+ - move to Knowlege Base to SQL lite
  - add backend, users profile and download tests into mobile app.
  
  Want to contribute: let me know.
