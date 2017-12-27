@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RadioButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import static com.buniumasta.quizapp.R.id.button1_group1;
@@ -23,7 +22,6 @@ import static com.buniumasta.quizapp.R.id.check_box3_group1;
 import static com.buniumasta.quizapp.R.id.check_box3_group2;
 import static com.buniumasta.quizapp.R.id.check_question_1;
 import static com.buniumasta.quizapp.R.id.check_question_2;
-import static com.buniumasta.quizapp.R.id.image;
 import static com.buniumasta.quizapp.R.id.radio_question_1;
 import static com.buniumasta.quizapp.R.id.radio_question_2;
 
@@ -46,47 +44,46 @@ public class MainActivity extends AppCompatActivity {
         Question question;
         question = quiz.getQuestion(0);
 
-        TextView text_view;
-        ImageView image_view = (ImageView) findViewById(radio_question_1);
+        ImageView image_view = findViewById(radio_question_1);
         image_view.setImageResource(question.getPictureResourceId());
 
-        RadioButton button_group = (RadioButton) findViewById(button1_group1);
+        RadioButton button_group = findViewById(button1_group1);
         button_group.setText(question.getmHint1());
-        button_group = (RadioButton) findViewById(button2_group1);
+        button_group = findViewById(button2_group1);
         button_group.setText(question.getmHint2());
-        button_group = (RadioButton) findViewById(button3_group1);
+        button_group = findViewById(button3_group1);
         button_group.setText(question.getmHint3());
 
         question = quiz.getQuestion(1);
-        image_view = (ImageView) findViewById(check_question_1);
+        image_view = findViewById(check_question_1);
         image_view.setImageResource(question.getPictureResourceId());
 
-        CheckBox check_box = (CheckBox) findViewById(check_box1_group1);
+        CheckBox check_box = findViewById(check_box1_group1);
         check_box.setText(question.getmHint1());
-        check_box = (CheckBox) findViewById(check_box2_group1);
+        check_box = findViewById(check_box2_group1);
         check_box.setText(question.getmHint2());
-        check_box = (CheckBox) findViewById(check_box3_group1);
+        check_box = findViewById(check_box3_group1);
         check_box.setText(question.getmHint3());
 
         question = quiz.getQuestion(2);
-        image_view = (ImageView) findViewById(radio_question_2);
+        image_view = findViewById(radio_question_2);
         image_view.setImageResource(question.getPictureResourceId());
 
-        button_group = (RadioButton) findViewById(button1_group2);
+        button_group = findViewById(button1_group2);
         button_group.setText(question.getmHint1());
-        button_group = (RadioButton) findViewById(button2_group2);
+        button_group = findViewById(button2_group2);
         button_group.setText(question.getmHint2());
-        button_group = (RadioButton) findViewById(button3_group2);
+        button_group = findViewById(button3_group2);
         button_group.setText(question.getmHint3());
 
         question = quiz.getQuestion(3);
-        image_view = (ImageView) findViewById(check_question_2);
+        image_view = findViewById(check_question_2);
         image_view.setImageResource(question.getPictureResourceId());
-        check_box = (CheckBox) findViewById(check_box1_group2);
+        check_box = findViewById(check_box1_group2);
         check_box.setText(question.getmHint1());
-        check_box = (CheckBox) findViewById(check_box2_group2);
-        check_box = (CheckBox) findViewById(check_box3_group2);
+        check_box = findViewById(check_box2_group2);
         check_box.setText(question.getmHint2());
+        check_box = findViewById(check_box3_group2);
         check_box.setText(question.getmHint3());
 
     }
@@ -96,32 +93,32 @@ public class MainActivity extends AppCompatActivity {
         RadioButton button;
         CheckBox box;
 
-        button = (RadioButton) findViewById(button1_group1);
+        button = findViewById(button1_group1);
         results[0][0] = button.isChecked();
-        button = (RadioButton) findViewById(button2_group1);
+        button = findViewById(button2_group1);
         results[0][1] = button.isChecked();
-        button = (RadioButton) findViewById(button3_group1);
+        button = findViewById(button3_group1);
         results[0][2] = button.isChecked();
 
-        box = (CheckBox) findViewById(check_box1_group1);
+        box = findViewById(check_box1_group1);
         results[1][0] = box.isChecked();
-        box = (CheckBox) findViewById(check_box2_group1);
+        box = findViewById(check_box2_group1);
         results[1][1] = box.isChecked();
-        box = (CheckBox) findViewById(check_box3_group1);
+        box = findViewById(check_box3_group1);
         results[1][2] = box.isChecked();
 
-        button = (RadioButton) findViewById(button1_group2);
+        button = findViewById(button1_group2);
         results[2][0] = button.isChecked();
-        button = (RadioButton) findViewById(button2_group2);
+        button = findViewById(button2_group2);
         results[2][1] = button.isChecked();
-        button = (RadioButton) findViewById(button3_group2);
+        button = findViewById(button3_group2);
         results[2][2] = button.isChecked();
 
-        box = (CheckBox) findViewById(check_box1_group2);
+        box = findViewById(check_box1_group2);
         results[3][0] = box.isChecked();
-        box = (CheckBox) findViewById(check_box2_group2);
+        box = findViewById(check_box2_group2);
         results[3][1] = box.isChecked();
-        box = (CheckBox) findViewById(check_box3_group2);
+        box = findViewById(check_box3_group2);
         results[3][2] = box.isChecked();
 
         quiz.checkResults(results);
@@ -143,32 +140,32 @@ public class MainActivity extends AppCompatActivity {
         RadioButton button;
         CheckBox box;
 
-        button = (RadioButton) findViewById(button1_group1);
+        button = findViewById(button1_group1);
         button.setChecked(false);
-        button = (RadioButton) findViewById(button2_group1);
+        button = findViewById(button2_group1);
         button.setChecked(false);
-        button = (RadioButton) findViewById(button3_group1);
-        button.setChecked(false);
-
-        box = (CheckBox) findViewById(check_box1_group1);
-        box.setChecked(false);
-        box = (CheckBox) findViewById(check_box2_group1);
-        box.setChecked(false);
-        box = (CheckBox) findViewById(check_box3_group1);
-        box.setChecked(false);
-
-        button = (RadioButton) findViewById(button1_group2);
-        button.setChecked(false);
-        button = (RadioButton) findViewById(button2_group2);
-        button.setChecked(false);
-        button = (RadioButton) findViewById(button3_group2);
+        button = findViewById(button3_group1);
         button.setChecked(false);
 
-        box = (CheckBox) findViewById(check_box1_group2);
+        box = findViewById(check_box1_group1);
         box.setChecked(false);
-        box = (CheckBox) findViewById(check_box2_group2);
+        box = findViewById(check_box2_group1);
         box.setChecked(false);
-        box = (CheckBox) findViewById(check_box3_group2);
+        box = findViewById(check_box3_group1);
+        box.setChecked(false);
+
+        button = findViewById(button1_group2);
+        button.setChecked(false);
+        button = findViewById(button2_group2);
+        button.setChecked(false);
+        button = findViewById(button3_group2);
+        button.setChecked(false);
+
+        box = findViewById(check_box1_group2);
+        box.setChecked(false);
+        box = findViewById(check_box2_group2);
+        box.setChecked(false);
+        box = findViewById(check_box3_group2);
         box.setChecked(false);
 
         Toast.makeText(this, "Odswieżam", Toast.LENGTH_SHORT).show();
