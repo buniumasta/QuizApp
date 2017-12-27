@@ -2,6 +2,16 @@ package com.buniumasta.quizapp;
 
 /**
  * Created by barto on 21.10.2017.
+ *
+ *
+ *
+ * xxxhdpi: 1280x1920 px
+ * xxhdpi: 960x1600 px
+ * xhdpi: 640x960 px
+ * hdpi: 480x800 px
+ * mdpi: 320x480 px
+ * ldpi: 240x320 px
+ *
  */
 
 public class Article {
@@ -9,6 +19,7 @@ public class Article {
     private String mHint1;
     private String mHint2;
     private String mHint3;
+    private int mPicResId;
 
     public Article(String answer, String hint1, String hint2, String hint3) {
         this.mAnswer = answer;
@@ -49,3 +60,4 @@ public class Article {
         mHint3 = name;
     }
 }
+
