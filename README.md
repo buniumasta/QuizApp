@@ -3,7 +3,7 @@ Simple Quiz App
 
 Application written by Bartosz Ostrowski (buniumasta@gmail.com)
 
-1) App stores some information about animals in very basic Knowlege Base
+1) App stores information about animals in very basic Knowlege Base
 2) Simple Knowledge Base consists of:  Aninal name + 3 funny sentences describing it.
 3) Quiz randomly takes 4 articles from Knowledge Base
 4) Quiz constructs questions by Factory, it generates 2 SingleAnswer Questions + 2 MultiAnswer Questions.
@@ -15,7 +15,7 @@ Application written by Bartosz Ostrowski (buniumasta@gmail.com)
 # Close Future Development:
  - Add Comments and JavaDoc 
  - correct TYPO and check questions LOGIC /Horse/Dog issue with helping people?
- - work on presentation Layer (add Pictures + proper graphics)
+ - [done] work on presentation Layer (add Pictures + proper graphics)
  - introduce Logic: showing wrong answers (background red)
  - introduce Logic: seperate activity showing all correct answer for certain article
  - move all String to Static String variables - add proper naming convention
