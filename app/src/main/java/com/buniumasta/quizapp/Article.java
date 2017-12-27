@@ -5,12 +5,14 @@ package com.buniumasta.quizapp;
  *
  *
  *
- * xxxhdpi: 1280x1920 px
- * xxhdpi: 960x1600 px
- * xhdpi: 640x960 px
- * hdpi: 480x800 px
- * mdpi: 320x480 px
- * ldpi: 240x320 px
+ * xxxhdpi: 1920x1280 px
+ * xhdpi: 960x640 px
+ * mdpi: 480x320 px
+ *
+ * xxhdpi: 1600x960 px
+ * hdpi: 800x480 px
+ *
+ * ldpi: 320x240 px
  *
  */
 

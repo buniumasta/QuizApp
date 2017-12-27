@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,8 +45,11 @@ public class MainActivity extends AppCompatActivity {
         Question question;
         question = quiz.getQuestion(0);
 
-        TextView text_view = (TextView) findViewById(radio_question_1);
-        text_view.setText(question.getmAnswer());
+        TextView text_view;
+        //text_view.setText(question.getmAnswer());
+
+        ImageView image_view = (ImageView) findViewById(radio_question_1);
+        image_view.setImageResource(R.drawable.owl);
 
         RadioButton button_group = (RadioButton) findViewById(button1_group1);
         button_group.setText(question.getmHint1());
@@ -55,8 +59,8 @@ public class MainActivity extends AppCompatActivity {
         button_group.setText(question.getmHint3());
 
         question = quiz.getQuestion(1);
-        text_view = (TextView) findViewById(check_question_1);
-        text_view.setText(question.getmAnswer());
+        image_view = (ImageView) findViewById(check_question_1);
+        image_view.setImageResource(R.drawable.ant);
 
         CheckBox check_box = (CheckBox) findViewById(check_box1_group1);
         check_box.setText(question.getmHint1());
