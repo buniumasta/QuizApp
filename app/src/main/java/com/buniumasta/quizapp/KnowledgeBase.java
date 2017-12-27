@@ -15,8 +15,8 @@ public class KnowledgeBase {
         fillInKnowledgeBase();
     }
 
-    public boolean addArticle(String answer, String hint1, String hint2, String hint3) {
-        return mArticles.add(new Article(answer, hint1, hint2, hint3));
+    public boolean addArticle(String answer, String hint1, String hint2, String hint3, int resourcePictureId) {
+        return mArticles.add(new Article(answer, hint1, hint2, hint3, resourcePictureId));
     }
 
     Article getRandomArticle() {
@@ -33,60 +33,71 @@ public class KnowledgeBase {
                 "Czapla",
                 "można najczęściej spotkać nad płytkimi brzegami rzek i jezior",
                 "ma długą szyję wygiętą w kszatł litery S",
-                "potrafi nawet kilka minut stać nieruchomo w wodzie, by nagle ostrym dziobem złapać smaczną rybę lub żabę");
+                "potrafi nawet kilka minut stać nieruchomo w wodzie, by nagle ostrym dziobem złapać smaczną rybę lub żabę",
+                    R.drawable.heron
+                );
         this.addArticle(
                 "Gepard",
                 "jest drapieżnikiem. Ma mocne i ostre zęby oraz pazury, a także bardzo dobre węch i wzrok",
                 "jego cętkowane futro pomaga sie ukryć w gęstwinie drzew",
-                "jest najszybszym zwierzęciem na świecie"
+                "jest najszybszym zwierzęciem na świecie",
+                R.drawable.cheetah
         );
         this.addArticle(
                 "Koń",
                 "w ciągu dnia lubi paść się na łące, noc spędza w stajni",
                 "uszy pokazują jego nastrój, kiedy są sztywno postawione, zwierzę jest zdenerwowane lub przestraszone",
-                "dawniej pomagał w pracy, czasem może brać udział w zawodach jeździeckich"
+                "dawniej pomagał w pracy, czasem może brać udział w zawodach jeździeckich",
+                R.drawable.horse
         );
         this.addArticle(
                 "Niedźwiedź polarny",
                 "jest więlki i biały, ma grube wodoszczelne futro i jest doskonałym pływakiem",
                 "jego potężne i bardzo silne łapy zakończone są ostrymi  pazurami ",
-                "żywi się głownie fokami i rybami"
+                "żywi się głownie fokami i rybami",
+                R.drawable.polarbear
         );
         this.addArticle(
                 "Pies",
                 "jest nawierniejszym przyjacielem człowieka",
                 "może być spacjelnie szkolony do pomocy ludziom",
-                "merdanie ogonem to oznaka przyjaznego nastawienia"
+                "merdanie ogonem to oznaka przyjaznego nastawienia",
+                R.drawable.dog
         );
         this.addArticle(
                 "Rekin",
                 "to postrach mórz i oceanow",
                 "ma bardzo ostre zęby, silny ogon i szortstką, pokrytą małymi łuskami skórę",
-                "ma bardzo dobry wzrok, który pomaga mu w polowaniu. Szczególnie dobrze widzi w ciemności"
+                "ma bardzo dobry wzrok, który pomaga mu w polowaniu. Szczególnie dobrze widzi w ciemności",
+                R.drawable.shark
         );
         this.addArticle(
                 "Sowa",
                 "ma wielkie oczy i zakrzywiony dziób",
                 "potrafi obrócić głowę prawie dookoła szyi",
-                "w dzień odpoczywa, a wnocy wylatuje na polowanie, ponieważ o zmierzchu widzi lepiej"
+                "w dzień odpoczywa, a wnocy wylatuje na polowanie, ponieważ o zmierzchu widzi lepiej",
+                R.drawable.owl
         );
         this.addArticle(
                 "ślimak",
                 "Nosi na grzbiecie muszle, w której może sie schować, gdy zagraża mu niebezpieczeństwo",
                 "Może żyć w morzu",
-                "Na głowie ma czułki"
+                "Na głowie ma czułki",
+                R.drawable.snail
         );
         this.addArticle(
                 "mrówka",
                 "mieszka w wielkich kopcach. W takim gnieździe żyje królowa (największa), oraz mniejsze robotnice. Wejścia do kopca strzegą: żołnierze",
                 "może unieść przedmioty o wiele większe od siebie",
-                "jej przysmakiem są gąsienice, liście oraz grzyby"
+                "jest symbolem pracowitości",
+                R.drawable.ant
         );
         this.addArticle(
                 "Pająk",
                 "ma osiem nóg, jest niezwykle ruchliwy i szybki, poluje przede wszystkich na owady",
                 "najwiekszym z nich jest ptasznik",
-                "przędzie okazałe pajęczyny, ktore służa im nie tylko podczas łowów, ale także do robienia najbardziej wymyślnych kryjówek"
+                "przędzie okazałe pajęczyny, ktore służa im nie tylko podczas łowów, ale także do robienia najbardziej wymyślnych kryjówek",
+                R.drawable.spider
         );
 
     }

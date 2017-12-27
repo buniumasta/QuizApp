@@ -85,7 +85,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/check_box2_group1" />
 
-        <TextView
+        <ImageView
             android:id="@+id/radio_question_2"
             style="@style/QuestionTitleText"
             android:layout_width="wrap_content"
@@ -119,7 +119,7 @@
                 android:layout_height="wrap_content" />
         </RadioGroup>
 
-        <TextView
+        <ImageView
             android:id="@+id/check_question_2"
             style="@style/QuestionTitleText"
             android:layout_width="wrap_content"

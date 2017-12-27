@@ -16,18 +16,24 @@ package com.buniumasta.quizapp;
  *
  */
 
+
+/**
+ *
+ */
+
 public class Article {
     private String mAnswer;
     private String mHint1;
     private String mHint2;
     private String mHint3;
-    private int mPicResId;
+    private int mPictureResourceId;
 
-    public Article(String answer, String hint1, String hint2, String hint3) {
+    public Article(String answer, String hint1, String hint2, String hint3,int pictureResourceId ) {
         this.mAnswer = answer;
         this.mHint1 = hint1;
         this.mHint2 = hint2;
         this.mHint3 = hint3;
+        this.mPictureResourceId=pictureResourceId;
     }
 
     public String getmAnswer() {
@@ -60,6 +66,14 @@ public class Article {
 
     public void setmHint3(String name) {
         mHint3 = name;
+    }
+
+    public int getmPictureResourceId() {
+        return mPictureResourceId;
+    }
+
+    public void setmPictureResourceId(int mPictureResourceId) {
+        this.mPictureResourceId = mPictureResourceId;
     }
 }
 

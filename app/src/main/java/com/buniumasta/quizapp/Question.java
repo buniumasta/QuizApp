@@ -15,7 +15,7 @@ public abstract class Question {
         this.type = type;
         Article articleTemporary = base.getRandomArticle();
 
-        article = new Article(articleTemporary.getmAnswer(), articleTemporary.getmHint1(), articleTemporary.getmHint2(), articleTemporary.getmHint3());
+        article = new Article(articleTemporary.getmAnswer(), articleTemporary.getmHint1(), articleTemporary.getmHint2(), articleTemporary.getmHint3(), articleTemporary.getmPictureResourceId());
         answersKey = new boolean[3];
         answersKey[0] = true;
         answersKey[1] = true;
@@ -47,6 +47,8 @@ public abstract class Question {
     public String getmHint3() {
         return article.getmHint3();
     }
+
+    public int getPictureResourceId() {return article.getmPictureResourceId();}
 
     public void setAnswerKey(boolean first, boolean second, boolean third) {
         answersKey[0] = first;

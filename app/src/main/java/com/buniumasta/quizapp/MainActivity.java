@@ -23,6 +23,7 @@ import static com.buniumasta.quizapp.R.id.check_box3_group1;
 import static com.buniumasta.quizapp.R.id.check_box3_group2;
 import static com.buniumasta.quizapp.R.id.check_question_1;
 import static com.buniumasta.quizapp.R.id.check_question_2;
+import static com.buniumasta.quizapp.R.id.image;
 import static com.buniumasta.quizapp.R.id.radio_question_1;
 import static com.buniumasta.quizapp.R.id.radio_question_2;
 
@@ -46,10 +47,8 @@ public class MainActivity extends AppCompatActivity {
         question = quiz.getQuestion(0);
 
         TextView text_view;
-        //text_view.setText(question.getmAnswer());
-
         ImageView image_view = (ImageView) findViewById(radio_question_1);
-        image_view.setImageResource(R.drawable.owl);
+        image_view.setImageResource(question.getPictureResourceId());
 
         RadioButton button_group = (RadioButton) findViewById(button1_group1);
         button_group.setText(question.getmHint1());
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         question = quiz.getQuestion(1);
         image_view = (ImageView) findViewById(check_question_1);
-        image_view.setImageResource(R.drawable.ant);
+        image_view.setImageResource(question.getPictureResourceId());
 
         CheckBox check_box = (CheckBox) findViewById(check_box1_group1);
         check_box.setText(question.getmHint1());
@@ -70,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         check_box.setText(question.getmHint3());
 
         question = quiz.getQuestion(2);
-        text_view = (TextView) findViewById(radio_question_2);
-        text_view.setText(question.getmAnswer());
+        image_view = (ImageView) findViewById(radio_question_2);
+        image_view.setImageResource(question.getPictureResourceId());
 
         button_group = (RadioButton) findViewById(button1_group2);
         button_group.setText(question.getmHint1());
@@ -81,13 +80,13 @@ public class MainActivity extends AppCompatActivity {
         button_group.setText(question.getmHint3());
 
         question = quiz.getQuestion(3);
-        text_view = (TextView) findViewById(check_question_2);
-        text_view.setText(question.getmAnswer());
+        image_view = (ImageView) findViewById(check_question_2);
+        image_view.setImageResource(question.getPictureResourceId());
         check_box = (CheckBox) findViewById(check_box1_group2);
         check_box.setText(question.getmHint1());
         check_box = (CheckBox) findViewById(check_box2_group2);
-        check_box.setText(question.getmHint2());
         check_box = (CheckBox) findViewById(check_box3_group2);
+        check_box.setText(question.getmHint2());
         check_box.setText(question.getmHint3());
 
     }
