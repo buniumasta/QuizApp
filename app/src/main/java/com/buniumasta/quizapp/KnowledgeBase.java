@@ -3,6 +3,7 @@ package com.buniumasta.quizapp;
 import java.util.ArrayList;
 import java.util.Random;
 
+
 /**
  * Created by barto on 21.10.2017.
  */
@@ -34,8 +35,8 @@ public class KnowledgeBase {
                 "można najczęściej spotkać nad płytkimi brzegami rzek i jezior",
                 "ma długą szyję wygiętą w kszatł litery S",
                 "potrafi nawet kilka minut stać nieruchomo w wodzie, by nagle ostrym dziobem złapać smaczną rybę lub żabę",
-                    R.drawable.heron
-                );
+                R.drawable.heron
+        );
         this.addArticle(
                 "Gepard",
                 "jest drapieżnikiem. Ma mocne i ostre zęby oraz pazury, a także bardzo dobre węch i wzrok, żyje na lądzie",

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zwierzaki Quiz</string>
+    <string name="animal_01_name">Czapla</string>
+    <string name="animal_01_hint1">można najczęściej spotkać nad płytkimi brzegami rzek i jezior</string>
+    <string name="animal_01_hint2">ma długą szyję wygiętą w kszatł litery S</string>
+    <string name="animal_01_hint3">potrafi nawet kilka minut stać nieruchomo w wodzie, by nagle ostrym dziobem złapać smaczną rybę lub żabę</string>
+</resources>

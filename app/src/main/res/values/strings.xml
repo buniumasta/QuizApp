@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">QuizApp</string>
+    <string name="animal_01_name">Heron</string>
+    <string name="animal_01_hint1">can be found most often on the shallow banks of rivers and lakes</string>
+    <string name="animal_01_hint2">has a long neck bent in the letter S</string>
+    <string name="animal_01_hint3">can stand still for a few minutes in the water, suddenly catch a tasty fish or frog with a sharp beak</string>
+    <string name="app_name">Quiz</string>
 </resources>
