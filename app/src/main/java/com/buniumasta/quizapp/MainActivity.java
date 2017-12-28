@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
         base = new KnowledgeBase();
         quiz = new Quiz(base);
         generateQuestions(findViewById(android.R.id.content));
-
-
     }
 
     public void generateQuestions(View view) {
