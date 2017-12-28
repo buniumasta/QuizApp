@@ -38,7 +38,7 @@ public class KnowledgeBase {
                 );
         this.addArticle(
                 "Gepard",
-                "jest drapieżnikiem. Ma mocne i ostre zęby oraz pazury, a także bardzo dobre węch i wzrok",
+                "jest drapieżnikiem. Ma mocne i ostre zęby oraz pazury, a także bardzo dobre węch i wzrok, żyje na lądzie",
                 "jego cętkowane futro pomaga sie ukryć w gęstwinie drzew",
                 "jest najszybszym zwierzęciem na świecie",
                 R.drawable.cheetah
@@ -53,14 +53,14 @@ public class KnowledgeBase {
         this.addArticle(
                 "Niedźwiedź polarny",
                 "jest więlki i biały, ma grube wodoszczelne futro i jest doskonałym pływakiem",
-                "jego potężne i bardzo silne łapy zakończone są ostrymi  pazurami ",
+                "jego potężne i bardzo silne łapy zakończone są ostrymi  pazurami",
                 "żywi się głownie fokami i rybami",
                 R.drawable.polarbear
         );
         this.addArticle(
                 "Pies",
                 "jest nawierniejszym przyjacielem człowieka",
-                "może być spacjelnie szkolony do pomocy ludziom",
+                "może być specjalnie szkolony do pomocy ludziom np pomagać niewidomym",
                 "merdanie ogonem to oznaka przyjaznego nastawienia",
                 R.drawable.dog
         );
@@ -68,7 +68,7 @@ public class KnowledgeBase {
                 "Rekin",
                 "to postrach mórz i oceanow",
                 "ma bardzo ostre zęby, silny ogon i szortstką, pokrytą małymi łuskami skórę",
-                "ma bardzo dobry wzrok, który pomaga mu w polowaniu. Szczególnie dobrze widzi w ciemności",
+                "Żyje w wodzie, ma bardzo dobry wzrok, który pomaga mu w polowaniu. Szczególnie dobrze widzi w ciemności.",
                 R.drawable.shark
         );
         this.addArticle(
@@ -89,14 +89,14 @@ public class KnowledgeBase {
                 "mrówka",
                 "mieszka w wielkich kopcach. W takim gnieździe żyje królowa (największa), oraz mniejsze robotnice. Wejścia do kopca strzegą: żołnierze",
                 "może unieść przedmioty o wiele większe od siebie",
-                "jest symbolem pracowitości",
+                "jest zazwyczaj czarna lub czerwona, jest symbolem pracowitości",
                 R.drawable.ant
         );
         this.addArticle(
                 "Pająk",
-                "ma osiem nóg, jest niezwykle ruchliwy i szybki, poluje przede wszystkich na owady",
+                "ma osiem nóg, jest niezwykle ruchliwy i szybki, poluje przede wszystkim na owady",
                 "najwiekszym z nich jest ptasznik",
-                "przędzie okazałe pajęczyny, ktore służa im nie tylko podczas łowów, ale także do robienia najbardziej wymyślnych kryjówek",
+                "przędzie okazałe pajęczyny, ktore służą nie tylko podczas łowów, ale także do robienia najbardziej wymyślnych kryjówek",
                 R.drawable.spider
         );
 

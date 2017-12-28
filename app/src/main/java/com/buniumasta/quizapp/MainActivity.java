@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import static com.buniumasta.quizapp.R.id.button1_group1;
@@ -131,10 +132,11 @@ public class MainActivity extends AppCompatActivity {
         quiz.regenerateQuiz(base);
         generateQuestions(view);
         clearButtons(view);
+        ScrollView scrollView = findViewById(R.id.main_scroll_view);
+        scrollView.scrollTo(0, 0);
     }
 
     public void clearButtons(View view) {
-        boolean[][] results = new boolean[4][3];
         RadioButton button;
         CheckBox box;
 
@@ -166,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
         box = findViewById(check_box3_group2);
         box.setChecked(false);
 
-        Toast.makeText(this, "Odswieżam", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Quiz odswieżony!", Toast.LENGTH_SHORT).show();
     }
 
 }
