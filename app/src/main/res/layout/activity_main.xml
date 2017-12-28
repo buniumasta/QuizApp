@@ -8,23 +8,17 @@
     android:layout_height="match_parent"
     tools:context="com.buniumasta.quizapp.MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/radio_question_1"
             style="@style/QuestionTitleText"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:cropToPadding="true"
-            android:padding="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="spread_inside" />
-
+            android:layout_height="wrap_content" />
 
         <RadioGroup
             android:id="@+id/radio_group1"
@@ -52,7 +46,6 @@
                 android:layout_height="wrap_content" />
         </RadioGroup>
 
-
         <ImageView
             android:id="@+id/check_question_1"
             style="@style/QuestionTitleText"
@@ -60,36 +53,27 @@
             android:layout_height="wrap_content"
             android:cropToPadding="true"
             android:padding="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radio_group1" />
+
+            />
 
         <CheckBox
             android:id="@+id/check_box1_group1"
             style="@style/QuestionContentText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_question_1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <CheckBox
             android:id="@+id/check_box2_group1"
             style="@style/QuestionContentText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_box1_group1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <CheckBox
             android:id="@+id/check_box3_group1"
             style="@style/QuestionContentText_Bottom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_box2_group1" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
 
         <ImageView
             android:id="@+id/radio_question_2"
@@ -97,10 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:cropToPadding="true"
-            android:padding="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_box3_group1" />
+            android:padding="8dp" />
 
         <RadioGroup
             android:id="@+id/radio_group2"
@@ -133,73 +114,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:cropToPadding="true"
-            android:padding="8dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radio_group2" />
+            android:padding="8dp" />
 
         <CheckBox
             android:id="@+id/check_box1_group2"
             style="@style/QuestionContentText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_question_2" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <CheckBox
             android:id="@+id/check_box2_group2"
             style="@style/QuestionContentText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_box1_group2" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <CheckBox
             android:id="@+id/check_box3_group2"
             style="@style/QuestionContentText_Bottom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_box2_group2" />
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/button_check"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="32dp"
-
-
             android:onClick="checkQuiz"
-            android:text="Sprawdz Wynik"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/button_generate"
-            app:layout_constraintTop_toBottomOf="@+id/check_box3_group2" />
+            android:text="Sprawdz Wynik" />
 
         <Button
-            android:id="@id/button_generate"
-            android:layout_width="0dp"
+            android:id="@+id/button_generate"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="32dp"
-
             android:onClick="generateQuiz"
-            android:text="Nowy Test"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toRightOf="@id/button_check"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/check_box3_group2" />
+            android:text="Nowy Test" />
 
-    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+
 </ScrollView>
