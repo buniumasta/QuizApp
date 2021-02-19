@@ -9,6 +9,7 @@ Application written by Bartosz Ostrowski (buniumasta@gmail.com)
 4) Quiz constructs questions by Factory, it generates 2 SingleAnswer Questions + 2 MultiAnswer Questions.
 5) Single Questions: //ToDO
 6) Multi Answer Questions: /ToDO
+7) Application dedicated to family's little Android fans :) Gift & Suprise.
 ..
 
 # ToDO
